@@ -79,9 +79,17 @@ namespace Microsoft.BotBuilderSamples
 
             if (activity.Type == ActivityTypes.Message)
             {
-                var uparam = turnContext.Activity.From.Properties["userparam"].ToString();
+ 
+                
 
-                await turnContext.SendActivityAsync($"Parameter that you sent is '{uparam}'");
+                try
+                {
+                    var uparam = dc.Context.Activity.From.Properties["userparam"].ToString();
+                    await dc.Context.SendActivityAsync($"Parameter that you sent is '{uparam}'");
+                }
+                catch (Exception e) {
+                    await dc.Context.SendActivityAsync(e.Message );
+                }                
 
                 // Perform a call to LUIS to retrieve results for the current activity message.
                 var luisResults = await _services.LuisServices[LuisConfiguration].RecognizeAsync(dc.Context, cancellationToken);
