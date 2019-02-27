@@ -84,7 +84,7 @@ namespace Microsoft.BotBuilderSamples
 
                 try
                 {
-                    await dc.Context.SendActivityAsync(turnContext.Activity.From.Name);
+                    await dc.Context.SendActivityAsync(turnContext.Activity.From.Id + ":" + turnContext.Activity.From.Name);
                     //  var uparam = dc.Context.Activity.From.Properties["userparam"].ToString();
                     for (int i = 0; i < turnContext.Activity.From.Properties.Count; i++) {
                         await dc.Context.SendActivityAsync(turnContext.Activity.From.Name);
@@ -94,7 +94,7 @@ namespace Microsoft.BotBuilderSamples
                    // await dc.Context.SendActivityAsync($"Parameter that you sent is '{uparam}'");
                 }
                 catch (Exception e) {
-                    await dc.Context.SendActivityAsync(e.Message );
+                    await dc.Context.SendActivityAsync("Error" + e.Message );
                 }                
 
                 // Perform a call to LUIS to retrieve results for the current activity message.
