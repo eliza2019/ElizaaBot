@@ -85,8 +85,8 @@ namespace Microsoft.BotBuilderSamples
                 try
                 {
                   //  var uparam = dc.Context.Activity.From.Properties["userparam"].ToString();
-                    for (int i = 0; i < dc.Context.Activity.From.Properties.Count; i++) {
-                        await dc.Context.SendActivityAsync(dc.Context.Activity.From.Properties[1].ToString());
+                    for (int i = 0; i < turnContext.Activity.From.Properties.Count; i++) {
+                        await dc.Context.SendActivityAsync(turnContext.Activity.From.Properties[1].ToString());
                     }
                     //await dc.Context.SendActivityAsync($"Parameter that you sent is '{uparam}'");
 
