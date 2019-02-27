@@ -1,0 +1,61 @@
+{
+  "name": "Elizaa",
+  "padlock": "w+egk+iv4UB2KWH5uTmH9w==!QHdu0l2tjRbLvKzD0ZchYfdT8ilYDo4DN2taDBj6V50oNtNgWbeKSwkVLAWf4NtU",
+  "version": "2.0",
+  "services": [
+    {
+      "tenantId": "f8de8bfe-a2c4-48be-8c10-b4d826105e97",
+      "subscriptionId": "e2e5ba07-e0ae-49cc-8b67-fbb5e2a06e6b",
+      "resourceGroup": "ApplicationInsights",
+      "serviceName": "Elizaa",
+      "type": "abs",
+      "name": "Elizaa",
+      "id": "1"
+    },
+    {
+      "connectionString": "sS4PxTxMZtDK7WfudiCNag==!CzQ4amv/io6z9+BTPl9Hl9HRc1z8l1EWZ0quFSe6EGoWYrdzt/hPWFgm+ZnYeTJ7Xth7ey56NyWmavwNgn19OwevBG1FcgynCWo8V6rhzjhWhqMDD/OvdTOZqvL/SRBa6An1w/SG/QavlRsoaS+wdKpdGLT9+X0IYdp28wITgOxgGBEQHwbxiyWQgAPF9a6jIn++SkzUwk0Hs7J7uTayRw==",
+      "tenantId": "f8de8bfe-a2c4-48be-8c10-b4d826105e97",
+      "subscriptionId": "e2e5ba07-e0ae-49cc-8b67-fbb5e2a06e6b",
+      "resourceGroup": "ApplicationInsights",
+      "serviceName": "elizaa8eec",
+      "type": "blob",
+      "id": "2"
+    },
+    {
+      "appId": "",
+      "appPassword": "",
+      "endpoint": "http://localhost:3978/api/messages",
+      "type": "endpoint",
+      "name": "development",
+      "id": "3"
+    },
+    {
+      "appId": "15c0390a-c99c-4c84-93ca-952354991e44",
+      "appPassword": "FlnoTzNxuCAQVvi4fTwPBQ==!v8j0AyunDnS+/hJXv7kESd0ksLTQ4F3SV7BcvHCicn4=",
+      "endpoint": "https://elizaa.azurewebsites.net/api/messages",
+      "type": "endpoint",
+      "name": "production",
+      "id": "4"
+    },
+    {
+      "instrumentationKey": "97+Hw6isUIjUSuQcxxb6CA==!yifqAqg4JpV2hSfoLledDVu56Zn0ruZDnu3tIeSs4IHnNXNZcVyMv65EALiam8Zb",
+      "applicationId": "02b4385c-1c18-49e7-aa9a-ddbf9331c276",
+      "apiKeys": {},
+      "tenantId": "f8de8bfe-a2c4-48be-8c10-b4d826105e97",
+      "subscriptionId": "e2e5ba07-e0ae-49cc-8b67-fbb5e2a06e6b",
+      "resourceGroup": "ApplicationInsights",
+      "serviceName": "Elizaajd6v3m",
+      "type": "appInsights",
+      "id": "5"
+    },
+    {
+      "appId": "33126005-e337-4249-9434-1fa6458c5281",
+      "authoringKey": "BTyKi1xZ+QOlwxjql0/NIg==!Ol2A7ywJupk20JrGquHmUQA0x8vV6mUGJX54I3bvJ/A/ZtFBY8uisHqX9srxGMPN",
+      "version": "0.1",
+      "region": "westus",
+      "type": "luis",
+      "name": "BasicBotLuisApplication",
+      "id": "6"
+    }
+  ]
+}
